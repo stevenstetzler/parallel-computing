@@ -1,0 +1,52 @@
+Value of system clock at start = 1321
+Coordinates will be read from file: input_5000_1.txt
+Natom = 5000
+cut =     0.5000
+Value of system clock after coord read = 6243
+Value of system clock after coord read and E calc = 392682
+                         Final Results
+                         -------------
+                   Num Pairs = 3445444
+                     Total E = 14437197.8078633826
+     Time to read coord file =         0.0049 Seconds
+         Time to calculate E =         0.3864 Seconds
+        Total Execution Time =         0.3914 Seconds
+
+	Testing function all_opts_and_check_dist
+
+Coordinates will be read from file: input_5000_1.txt
+Natom = 5000
+cut =     0.5000
+
+Test 0: 0.346454
+Test 1: 0.346459
+Test 2: 0.346418
+Test 3: 0.346435
+Test 4: 0.346506
+Average Time = 0.346454
+
+	Testing function check_distance
+
+Coordinates will be read from file: input_5000_1.txt
+Natom = 5000
+cut =     0.5000
+
+Test 0: 0.448163
+Test 1: 0.448150
+Test 2: 0.447926
+Test 3: 0.447968
+Test 4: 0.447958
+Average Time = 0.448033
+
+	Testing function all_opts
+
+Coordinates will be read from file: input_5000_1.txt
+Natom = 5000
+cut =     0.5000
+
+Test 0: 0.288478
+Test 1: 0.288156
+Test 2: 0.288347
+Test 3: 0.288481
+Test 4: 0.288167
+Average Time = 0.288326

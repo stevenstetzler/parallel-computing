@@ -1,0 +1,17 @@
+slurm1
+
+Testing function original implementation
+Test 0: 2.459014
+Test 1: 2.459718
+Test 2: 2.460445
+Test 3: 2.457939
+Test 4: 2.458338
+Average Time = 2.459091
+
+Testing function combine_exp
+Test 0: 2.202475
+Test 1: 2.205056
+Test 2: 2.258803
+Test 3: 2.204843
+Test 4: 2.208328
+Average Time = 2.215901
