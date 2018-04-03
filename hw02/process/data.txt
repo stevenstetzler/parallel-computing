@@ -10,7 +10,7 @@
 1_nodes 329.380360155
 60_nodes 10.01851637
 30_nodes_interleave 20.670523033
-80_nodes_random 11.515899176
+80_nodes_random 9.138438637
 2_nodes_random 245.141805763
 1_nodes_random 465.134070292
 100_nodes_random 7.488926205
@@ -18,7 +18,7 @@
 60_nodes_random 11.077138693
 20_nodes 21.246968776
 100_nodes 6.658409805
-140_nodes 4.22815523
+140_nodes 7.169610613
 140_nodes_random 8.271286534
 140_nodes_interleave 7.759052052
 30_nodes_random 20.876340547
@@ -33,4 +33,4 @@
 80_nodes 8.108818108
 60_nodes_interleave 12.007728985
 10_nodes_random 57.286352514
-80_nodes_interleave 9.17563392
+80_nodes_interleave 9.084196222
