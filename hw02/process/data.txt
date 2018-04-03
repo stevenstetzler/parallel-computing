@@ -9,8 +9,11 @@
 20_nodes_interleave 29.065825814
 1_nodes 329.380360155
 60_nodes 10.01851637
+160_nodes_interleave 7.102398055
 30_nodes_interleave 20.670523033
 80_nodes_random 9.138438637
+160_nodes 7.760371606
+180_nodes_random 8.378257106
 2_nodes_random 245.141805763
 1_nodes_random 465.134070292
 100_nodes_random 7.488926205
@@ -21,11 +24,14 @@
 140_nodes 7.169610613
 140_nodes_random 8.271286534
 140_nodes_interleave 7.759052052
+160_nodes_random 8.665755124
 30_nodes_random 20.876340547
-20_nodes_random 29.853603763
+180_nodes 7.653826298
 2_nodes 167.894860018
+20_nodes_random 29.853603763
 5_nodes_random 99.735083684
 120_nodes_interleave 6.828101929
+180_nodes_interleave 7.188550332
 1_nodes_interleave 464.065925678
 10_nodes_interleave 55.851073467
 30_nodes 16.101044947
