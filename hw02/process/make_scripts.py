@@ -26,7 +26,7 @@ def main():
     job_name = '#SBATCH --job-name="{0}-{1}"'
     
 
-    hosts = ['hermes[1-4]', 'trillian[1-3]', 'artemis[1-7]', 'qdata[1-8]', 'granger[1-8]', 'nibbler[1-4]', 'slurm[1-5]']
+    hosts = ['hermes[1-4]', 'trillian[1-3]', 'artemis[1-7]', 'qdata[1-8]', 'granger[1-8]', 'nibbler[1-4]', 'slurm[1-5]', 'ai[01-06]']
 
     exclude_list = [e for e in hosts if host not in e]
     
