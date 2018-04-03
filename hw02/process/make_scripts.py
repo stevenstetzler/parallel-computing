@@ -147,7 +147,7 @@ def main():
 
         procs = []
         for i in range(num_nodes): 
-            lower = i * max_frames / num_nodes + 1
+            lower = i * max_frames / num_nodes
             upper = (i + 1) * max_frames / num_nodes
             #print(" ".join(['sbatch', script_file.format(i, lower, upper)]))
             procs.append(subprocess.Popen(['sbatch', os.path.join(host, "{}_nodes_{}".format(num_nodes, method), script_file.format(i, lower, upper))]))
