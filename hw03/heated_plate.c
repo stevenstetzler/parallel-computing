@@ -18,8 +18,8 @@
 #define RIGHT_BOUNDARY_VALUE 100.0
 #define INITIAL_CELL_VALUE 50.0
 #define hotSpotRow 4500
-#define hotSptCol 6500
-#define hotSpotTemp=1000;
+#define hotSpotCol 6500
+#define hotSpotTemp 1000
 
 
 // Function prototypes
@@ -84,9 +84,9 @@ int main(int argc, char **argv) {
 		cur_cells_index = next_cells_index;
 		next_cells_index = !cur_cells_index;
 
-
-		cells[cur_cells_index][hotSpotRow][hotSptCol]=hotSpotTemp;
-		
+        if (hotSpotRow <= num_rows && hotSpotCol <= num_cols) {
+		    cells[cur_cells_index][hotSpotRow][hotSpotCol] = hotSpotTemp;
+        }
 		// Print the current progress
 		printf("Iteration: %d / %d\n", i + 1, iterations);
 	}
