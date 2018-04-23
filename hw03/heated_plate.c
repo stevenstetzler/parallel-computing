@@ -10,7 +10,6 @@
 #include <stdio.h>
 #include <time.h>
 
-
 // Define the immutable boundary conditions and the inital cell value
 #define TOP_BOUNDARY_VALUE 0.0
 #define BOTTOM_BOUNDARY_VALUE 100.0
@@ -95,7 +94,9 @@ int main(int argc, char **argv) {
 	int num_rows = (argc > 2) ? atoi(argv[2]) : 1000;
 	// Number of iterations to simulate (default = 100)
 	int iterations = (argc > 3) ? atoi(argv[3]) : 100;
-	
+
+    int num_threads = (argc > 4) ? atoi(argv[4]) : 1;
+
 	// Output the simulation parameters
 	printf("Grid: %dx%d, Iterations: %d\n", num_cols, num_rows, iterations);
 		
@@ -123,9 +124,6 @@ int main(int argc, char **argv) {
 
 
     // Create a set of threads
-    
-    int num_threads = 2;
-
 
     pthread_t threadpool[num_threads];
     args arguments[num_threads];
@@ -146,6 +144,8 @@ int main(int argc, char **argv) {
         arguments[i].iterations = iterations;
         arguments[i].plate = cells;
         arguments[i].update_barrier = &update_barrier;
+        arguments[i].num_rows = num_rows;
+        arguments[i].num_cols = num_cols;
     }
 
     for (i = 0; i < num_threads; i++) {
