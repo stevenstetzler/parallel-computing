@@ -9,11 +9,12 @@
 #include <stdio.h>
 #include <time.h>
 #include <pthread.h>
+#include <math.h>
 
 // Define the immutable boundary conditions and the inital cell value
-#define TOP_BOUNDARY_VALUE 100.0
+#define TOP_BOUNDARY_VALUE 0.0
 #define BOTTOM_BOUNDARY_VALUE 100.0
-#define LEFT_BOUNDARY_VALUE 100.0
+#define LEFT_BOUNDARY_VALUE 0.0
 #define RIGHT_BOUNDARY_VALUE 100.0
 #define INITIAL_CELL_VALUE 50.0
 #define hotSpotRow 4500
@@ -40,6 +41,7 @@ typedef struct args {
     pthread_barrier_t* update_barrier;
 } args;
 
+int make_movie = 0;
 pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 int curr_iter = 0;
 
@@ -79,16 +81,19 @@ void* parallel_code(void* p) {
 		    cells[curr_cells_index][hotSpotRow][hotSpotCol] = hotSpotTemp;
         }
 
-        // First thread that gets to this creates a snapshot at current iter, increments iter
-        pthread_mutex_lock(&mutex1);
+        if (make_movie == 1) {
+            // First thread that gets to this creates a snapshot at current iter, increments iter
+            pthread_mutex_lock(&mutex1);
 
-        if (curr_iter == t) {
-            printf("Thread %d, curr_iter = %d, t = %d\n", t_args->thread_id, curr_iter, t);
-            create_snapshot(cells[curr_cells_index], t_args->num_cols, t_args->num_rows, curr_iter);
-            curr_iter += 1;
+            if (curr_iter == t) {
+                printf("Thread %d, curr_iter = %d, t = %d\n", t_args->thread_id, curr_iter, t);
+                create_snapshot(cells[curr_cells_index], t_args->num_cols, t_args->num_rows, curr_iter);
+                curr_iter += (t_args->iterations > 100) ? t_args->iterations / 100 : 1;
+                printf("Thread %d, Update: curr_iter = %d, t = %d\n", t_args->thread_id, curr_iter, t);
+            }
+
+            pthread_mutex_unlock(&mutex1);
         }
-
-        pthread_mutex_unlock(&mutex1);
 
         pthread_barrier_wait(t_args->update_barrier);
 		// printf("Thread %d starting up again.\n", t_args->thread_id);
@@ -97,6 +102,14 @@ void* parallel_code(void* p) {
 		printf("Thread: %d, Iteration: %d / %d\n", t_args->thread_id, t + 1, t_args->iterations);
 	}
     
+}
+
+int power_of_four(unsigned int x) {
+    if (x == 0) 
+        return 0;
+    if (x & (x - 1))
+        return 0;
+    return x & 0x55555555;
 }
 
 int main(int argc, char **argv) {
@@ -110,11 +123,14 @@ int main(int argc, char **argv) {
 	int num_rows = (argc > 2) ? atoi(argv[2]) : 1000;
 	// Number of iterations to simulate (default = 100)
 	int iterations = (argc > 3) ? atoi(argv[3]) : 100;
-
-    int num_threads = (argc > 4) ? atoi(argv[4]) : 1;
+    // Number of threads to use
+    unsigned int num_threads = (argc > 4) ? atoi(argv[4]) : 1;
+    int process_layout = (argc > 5) ? atoi(argv[5]) : 0;
+    // Whether or not to make a movie
+    make_movie = (argc > 6) ? atoi(argv[6]) : 0;
 
 	// Output the simulation parameters
-	printf("Grid: %dx%d, Iterations: %d\n", num_cols, num_rows, iterations);
+	printf("Grid: %dx%d, Iterations: %d, Threads: %d, Movie: %d \n", num_cols, num_rows, iterations, num_threads, make_movie);
 		
 	// We allocate two arrays: one for the current time step and one for the next time step.
 	// At the end of each iteration, we switch the arrays in order to avoid copying.
@@ -138,7 +154,6 @@ int main(int argc, char **argv) {
 	for (y = 1; y <= num_rows; y++) cells[0][y][0] = cells[1][y][0] = LEFT_BOUNDARY_VALUE;
 	for (y = 1; y <= num_rows; y++) cells[0][y][num_cols + 1] = cells[1][y][num_cols + 1] = RIGHT_BOUNDARY_VALUE;
 
-
     // Create a set of threads
 
     pthread_t threadpool[num_threads];
@@ -149,13 +164,62 @@ int main(int argc, char **argv) {
 
     pthread_barrier_t update_barrier;
     pthread_barrier_init(&update_barrier, NULL, num_threads);
+    
+    int divisions = (int) sqrt(num_threads);
+    if (process_layout == 3) {
+        divisions = num_rows / 100;
+    }
+    int j = 0;
+
+    int necessary_subproblems = (2 * num_rows * num_cols * 32) / (2048 * 1024);
 
     // Define scheme for assigning which work each thread will take
     for (i = 0; i < num_threads; i++) {
-        arguments[i].start_row = (int) (num_rows / (float) num_threads * i) + 1;
-        arguments[i].end_row = (int) (num_rows / (float) num_threads * (i + 1));
-        arguments[i].start_col = 1;
-        arguments[i].end_col = num_cols;
+        switch (process_layout) {
+            case 0 :
+                // Assign each thread an equal number of rows to work with
+                arguments[i].start_row = (int) (num_rows / (float) num_threads * i) + 1;
+                arguments[i].end_row = (int) (num_rows / (float) num_threads * (i + 1));
+                arguments[i].start_col = 1;
+                arguments[i].end_col = num_cols;
+                break;
+            case 1 :
+                // Assign each thread an equal number of columns to work with
+                arguments[i].start_row = 1;
+                arguments[i].end_row = num_rows;
+                arguments[i].start_col = (int) (num_cols / (float) num_threads * i) + 1;
+                arguments[i].end_col = (int) (num_cols / (float) num_threads * (i + 1));
+                break;
+            case 2 :
+                // Block into squares
+                if (!power_of_four(num_threads)) {
+                    printf("num_threads = %d is not a power of four. Cannot block into squares.\n", num_threads);
+                    return 1;
+                }
+                if (i % divisions == 0 && i != 0) {
+                    j += 1;
+                }
+                arguments[i].start_row = (int) (num_rows / (float) divisions * (i % divisions)) + 1;
+                arguments[i].end_row = (int) (num_rows / (float) divisions * ((i % divisions) + 1));
+                arguments[i].start_col = (int) (num_cols / (float) divisions * j) + 1;
+                arguments[i].end_col = (int) (num_cols / (float) divisions * (j + 1));
+                //printf("Thread %d, start_row %d, end_row %d, start_col %d, end_col %d\n", i, arguments[i].start_row, arguments[i].end_row, arguments[i].start_col, arguments[i].end_col);
+                
+                break;
+            case 3 :
+                // Block into cache sized squares
+                if (i % divisions == 0 && i != 0) {
+                    j += 1;
+                }
+                arguments[i].start_row = (int) (num_rows / (float) divisions * (i % divisions)) + 1;
+                arguments[i].end_row = (int) (num_rows / (float) divisions * ((i % divisions) + 1));
+                arguments[i].start_col = (int) (num_cols / (float) divisions * j) + 1;
+                arguments[i].end_col = (int) (num_cols / (float) divisions * (j + 1));
+                //printf("Thread %d, start_row %d, end_row %d, start_col %d, end_col %d\n", i, arguments[i].start_row, arguments[i].end_row, arguments[i].start_col, arguments[i].end_col);
+                
+                break;
+        }
+
         arguments[i].thread_id = i;
         arguments[i].iterations = iterations;
         arguments[i].plate = cells;
@@ -163,6 +227,8 @@ int main(int argc, char **argv) {
         arguments[i].num_rows = num_rows;
         arguments[i].num_cols = num_cols;
     }
+
+    //return 0;
 
     for (i = 0; i < num_threads; i++) {
         printf("Starting thread %d.\n", i);
@@ -174,37 +240,13 @@ int main(int argc, char **argv) {
         pthread_join(threadpool[i], NULL);
     }
 
-//	// Simulate the heat flow for the specified number of iterations
-//	for (i = 0; i < iterations; i++) {
-//		// Traverse the plate, computing the new value of each cell
-//		for (y = 1; y <= num_rows; y++) {
-//			for (x = 1; x <= num_cols; x++) {
-//				// The new value of this cell is the average of the old values of this cell's four neighbors
-//				cells[next_cells_index][y][x] = (cells[curr_cells_index][y][x - 1]  +
-//				                                 cells[curr_cells_index][y][x + 1]  +
-//				                                 cells[curr_cells_index][y - 1][x]  +
-//				                                 cells[curr_cells_index][y + 1][x]) * 0.25;
-//			}
-//		}
-//		
-//		// Swap the two arrays
-//		curr_cells_index = next_cells_index;
-//		next_cells_index = !curr_cells_index;
-//
-//        if (hotSpotRow <= num_rows && hotSpotCol <= num_cols) {
-//		    cells[curr_cells_index][hotSpotRow][hotSpotCol] = hotSpotTemp;
-//        }
-//		// Print the current progress
-//		printf("Iteration: %d / %d\n", i + 1, iterations);
-//	}
-	
 	// Output a snapshot of the final state of the plate
 	int final_cells = (iterations % 2 == 0) ? 0 : 1;
 	//create_snapshot(cells[final_cells], num_cols, num_rows, iterations);
 
 	// Compute and output the execution time
 	time_t end_time = time(NULL);
-	printf("\nExecution time: %d seconds\n", (int) difftime(end_time, start_time));
+	printf("\nExecution time: %f seconds\n", difftime(end_time, start_time));
 	
 	return 0;
 }
