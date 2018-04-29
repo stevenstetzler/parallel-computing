@@ -1,0 +1,302 @@
+hermes1
+32
+
+64
+
+1524801585133418612
+Grid: 10000x10000, Iterations: 10000, Threads: 64, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 156, start_col = 1, end_col = 10000
+Starting thread 2.
+Starting thread 3.
+Thread 2, start_row = 313, end_row = 468, start_col = 1, end_col = 10000
+Starting thread 4.
+Thread 3, start_row = 469, end_row = 625, start_col = 1, end_col = 10000
+Starting thread 5.
+Thread 4, start_row = 626, end_row = 781, start_col = 1, end_col = 10000
+Starting thread 6.
+Starting thread 7.
+Starting thread 8.
+Thread 7, start_row = 1094, end_row = 1250, start_col = 1, end_col = 10000
+Starting thread 9.
+Starting thread 10.
+Starting thread 11.
+Starting thread 12.
+Starting thread 13.
+Starting thread 14.
+Starting thread 15.
+Starting thread 16.
+Starting thread 17.
+Starting thread 18.
+Starting thread 19.
+Starting thread 20.
+Starting thread 21.
+Starting thread 22.
+Starting thread 23.
+Thread 21, start_row = 3282, end_row = 3437, start_col = 1, end_col = 10000
+Starting thread 24.
+Thread 23, start_row = 3594, end_row = 3750, start_col = 1, end_col = 10000
+Starting thread 25.
+Starting thread 26.
+Thread 14, start_row = 2188, end_row = 2343, start_col = 1, end_col = 10000
+Starting thread 27.
+Starting thread 28.
+Starting thread 29.
+Starting thread 30.
+Thread 18, start_row = 2813, end_row = 2968, start_col = 1, end_col = 10000
+Starting thread 31.
+Starting thread 32.
+Thread 1, start_row = 157, end_row = 312, start_col = 1, end_col = 10000
+Starting thread 33.
+Starting thread 34.
+Starting thread 35.
+Starting thread 36.
+Starting thread 37.
+Thread 36, start_row = 5626, end_row = 5781, start_col = 1, end_col = 10000
+Starting thread 38.
+Thread 22, start_row = 3438, end_row = 3593, start_col = 1, end_col = 10000
+Starting thread 39.
+Starting thread 40.
+Thread 37, start_row = 5782, end_row = 5937, start_col = 1, end_col = 10000
+Thread 39, start_row = 6094, end_row = 6250, start_col = 1, end_col = 10000
+Thread 11, start_row = 1719, end_row = 1875, start_col = 1, end_col = 10000
+Thread 20, start_row = 3126, end_row = 3281, start_col = 1, end_col = 10000
+Starting thread 41.
+Thread 40, start_row = 6251, end_row = 6406, start_col = 1, end_col = 10000
+Starting thread 42.
+Starting thread 43.
+Thread 42, start_row = 6563, end_row = 6718, start_col = 1, end_col = 10000
+Thread 9, start_row = 1407, end_row = 1562, start_col = 1, end_col = 10000
+Thread 24, start_row = 3751, end_row = 3906, start_col = 1, end_col = 10000
+Starting thread 44.
+Starting thread 45.
+Starting thread 46.
+Starting thread 47.
+Starting thread 48.
+Starting thread 49.
+Starting thread 50.
+Starting thread 51.
+Starting thread 52.
+Thread 13, start_row = 2032, end_row = 2187, start_col = 1, end_col = 10000
+Thread 5, start_row = 782, end_row = 937, start_col = 1, end_col = 10000
+Thread 43, start_row = 6719, end_row = 6875, start_col = 1, end_col = 10000
+Thread 38, start_row = 5938, end_row = 6093, start_col = 1, end_col = 10000
+Thread 41, start_row = 6407, end_row = 6562, start_col = 1, end_col = 10000
+Thread 15, start_row = 2344, end_row = 2500, start_col = 1, end_col = 10000
+Thread 16, start_row = 2501, end_row = 2656, start_col = 1, end_col = 10000
+Thread 17, start_row = 2657, end_row = 2812, start_col = 1, end_col = 10000
+Thread 19, start_row = 2969, end_row = 3125, start_col = 1, end_col = 10000
+Thread 10, start_row = 1563, end_row = 1718, start_col = 1, end_col = 10000
+Thread 48, start_row = 7501, end_row = 7656, start_col = 1, end_col = 10000
+Thread 49, start_row = 7657, end_row = 7812, start_col = 1, end_col = 10000
+Starting thread 53.
+Thread 52, start_row = 8126, end_row = 8281, start_col = 1, end_col = 10000
+Starting thread 54.
+Starting thread 55.
+Starting thread 56.
+Starting thread 57.
+Starting thread 58.
+Starting thread 59.
+Starting thread 60.
+Starting thread 61.
+Starting thread 62.
+Starting thread 63.
+Thread 53, start_row = 8282, end_row = 8437, start_col = 1, end_col = 10000
+Thread 32, start_row = 5001, end_row = 5156, start_col = 1, end_col = 10000
+Thread 50, start_row = 7813, end_row = 7968, start_col = 1, end_col = 10000
+Thread 47, start_row = 7344, end_row = 7500, start_col = 1, end_col = 10000
+Thread 51, start_row = 7969, end_row = 8125, start_col = 1, end_col = 10000
+Thread 35, start_row = 5469, end_row = 5625, start_col = 1, end_col = 10000
+Thread 33, start_row = 5157, end_row = 5312, start_col = 1, end_col = 10000
+Thread 34, start_row = 5313, end_row = 5468, start_col = 1, end_col = 10000
+Thread 6, start_row = 938, end_row = 1093, start_col = 1, end_col = 10000
+Thread 46, start_row = 7188, end_row = 7343, start_col = 1, end_col = 10000
+Thread 44, start_row = 6876, end_row = 7031, start_col = 1, end_col = 10000
+Thread 26, start_row = 4063, end_row = 4218, start_col = 1, end_col = 10000
+Thread 45, start_row = 7032, end_row = 7187, start_col = 1, end_col = 10000
+Thread 27, start_row = 4219, end_row = 4375, start_col = 1, end_col = 10000
+Thread 8, start_row = 1251, end_row = 1406, start_col = 1, end_col = 10000
+Thread 54, start_row = 8438, end_row = 8593, start_col = 1, end_col = 10000
+Thread 55, start_row = 8594, end_row = 8750, start_col = 1, end_col = 10000
+Thread 28, start_row = 4376, end_row = 4531, start_col = 1, end_col = 10000
+Thread 30, start_row = 4688, end_row = 4843, start_col = 1, end_col = 10000
+Thread 63, start_row = 9844, end_row = 10000, start_col = 1, end_col = 10000
+Thread 60, start_row = 9376, end_row = 9531, start_col = 1, end_col = 10000
+Thread 58, start_row = 9063, end_row = 9218, start_col = 1, end_col = 10000
+Thread 12, start_row = 1876, end_row = 2031, start_col = 1, end_col = 10000
+Thread 57, start_row = 8907, end_row = 9062, start_col = 1, end_col = 10000
+Thread 25, start_row = 3907, end_row = 4062, start_col = 1, end_col = 10000
+Thread 29, start_row = 4532, end_row = 4687, start_col = 1, end_col = 10000
+Thread 56, start_row = 8751, end_row = 8906, start_col = 1, end_col = 10000
+Thread 61, start_row = 9532, end_row = 9687, start_col = 1, end_col = 10000
+Thread 31, start_row = 4844, end_row = 5000, start_col = 1, end_col = 10000
+Thread 59, start_row = 9219, end_row = 9375, start_col = 1, end_col = 10000
+Thread 62, start_row = 9688, end_row = 9843, start_col = 1, end_col = 10000
+
+Execution time: 821.000000 seconds
+1524802406966918502
+
+32
+
+1524802406970929860
+Grid: 10000x10000, Iterations: 10000, Threads: 32, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 312, start_col = 1, end_col = 10000
+Starting thread 2.
+Starting thread 3.
+Starting thread 4.
+Starting thread 5.
+Starting thread 6.
+Starting thread 7.
+Starting thread 8.
+Starting thread 9.
+Starting thread 10.
+Starting thread 11.
+Starting thread 12.
+Thread 1, start_row = 313, end_row = 625, start_col = 1, end_col = 10000
+Starting thread 13.
+Starting thread 14.
+Starting thread 15.
+Starting thread 16.
+Starting thread 17.
+Starting thread 18.
+Starting thread 19.
+Starting thread 20.
+Thread 19, start_row = 5938, end_row = 6250, start_col = 1, end_col = 10000
+Starting thread 21.
+Starting thread 22.
+Starting thread 23.
+Starting thread 24.
+Starting thread 25.
+Starting thread 26.
+Starting thread 27.
+Starting thread 28.
+Starting thread 29.
+Starting thread 30.
+Starting thread 31.
+Thread 20, start_row = 6251, end_row = 6562, start_col = 1, end_col = 10000
+Thread 15, start_row = 4688, end_row = 5000, start_col = 1, end_col = 10000
+Thread 12, start_row = 3751, end_row = 4062, start_col = 1, end_col = 10000
+Thread 31, start_row = 9688, end_row = 10000, start_col = 1, end_col = 10000
+Thread 7, start_row = 2188, end_row = 2500, start_col = 1, end_col = 10000
+Thread 6, start_row = 1876, end_row = 2187, start_col = 1, end_col = 10000
+Thread 5, start_row = 1563, end_row = 1875, start_col = 1, end_col = 10000
+Thread 4, start_row = 1251, end_row = 1562, start_col = 1, end_col = 10000
+Thread 27, start_row = 8438, end_row = 8750, start_col = 1, end_col = 10000
+Thread 25, start_row = 7813, end_row = 8125, start_col = 1, end_col = 10000
+Thread 22, start_row = 6876, end_row = 7187, start_col = 1, end_col = 10000
+Thread 21, start_row = 6563, end_row = 6875, start_col = 1, end_col = 10000
+Thread 30, start_row = 9376, end_row = 9687, start_col = 1, end_col = 10000
+Thread 3, start_row = 938, end_row = 1250, start_col = 1, end_col = 10000
+Thread 13, start_row = 4063, end_row = 4375, start_col = 1, end_col = 10000
+Thread 26, start_row = 8126, end_row = 8437, start_col = 1, end_col = 10000
+Thread 23, start_row = 7188, end_row = 7500, start_col = 1, end_col = 10000
+Thread 8, start_row = 2501, end_row = 2812, start_col = 1, end_col = 10000
+Thread 29, start_row = 9063, end_row = 9375, start_col = 1, end_col = 10000
+Thread 24, start_row = 7501, end_row = 7812, start_col = 1, end_col = 10000
+Thread 28, start_row = 8751, end_row = 9062, start_col = 1, end_col = 10000
+Thread 9, start_row = 2813, end_row = 3125, start_col = 1, end_col = 10000
+Thread 16, start_row = 5001, end_row = 5312, start_col = 1, end_col = 10000
+Thread 10, start_row = 3126, end_row = 3437, start_col = 1, end_col = 10000
+Thread 18, start_row = 5626, end_row = 5937, start_col = 1, end_col = 10000
+Thread 2, start_row = 626, end_row = 937, start_col = 1, end_col = 10000
+Thread 14, start_row = 4376, end_row = 4687, start_col = 1, end_col = 10000
+Thread 11, start_row = 3438, end_row = 3750, start_col = 1, end_col = 10000
+Thread 17, start_row = 5313, end_row = 5625, start_col = 1, end_col = 10000
+
+Execution time: 1036.000000 seconds
+1524803442701815245
+
+16
+
+1524803442718011733
+Grid: 10000x10000, Iterations: 10000, Threads: 16, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 625, start_col = 1, end_col = 10000
+Starting thread 2.
+Starting thread 3.
+Starting thread 4.
+Starting thread 5.
+Starting thread 6.
+Thread 1, start_row = 626, end_row = 1250, start_col = 1, end_col = 10000
+Starting thread 7.
+Starting thread 8.
+Starting thread 9.
+Starting thread 10.
+Starting thread 11.
+Starting thread 12.
+Starting thread 13.
+Starting thread 14.
+Starting thread 15.
+Thread 15, start_row = 9376, end_row = 10000, start_col = 1, end_col = 10000
+Thread 10, start_row = 6251, end_row = 6875, start_col = 1, end_col = 10000
+Thread 7, start_row = 4376, end_row = 5000, start_col = 1, end_col = 10000
+Thread 4, start_row = 2501, end_row = 3125, start_col = 1, end_col = 10000
+Thread 3, start_row = 1876, end_row = 2500, start_col = 1, end_col = 10000
+Thread 2, start_row = 1251, end_row = 1875, start_col = 1, end_col = 10000
+Thread 11, start_row = 6876, end_row = 7500, start_col = 1, end_col = 10000
+Thread 12, start_row = 7501, end_row = 8125, start_col = 1, end_col = 10000
+Thread 13, start_row = 8126, end_row = 8750, start_col = 1, end_col = 10000
+Thread 8, start_row = 5001, end_row = 5625, start_col = 1, end_col = 10000
+Thread 5, start_row = 3126, end_row = 3750, start_col = 1, end_col = 10000
+Thread 14, start_row = 8751, end_row = 9375, start_col = 1, end_col = 10000
+Thread 9, start_row = 5626, end_row = 6250, start_col = 1, end_col = 10000
+Thread 6, start_row = 3751, end_row = 4375, start_col = 1, end_col = 10000
+
+Execution time: 1699.000000 seconds
+1524805141729880347
+
+8
+
+1524805141742910785
+Grid: 10000x10000, Iterations: 10000, Threads: 8, Movie: 0 
+Starting thread 0.
+Thread 0, start_row = 1, end_row = 1250, start_col = 1, end_col = 10000
+Starting thread 1.
+Starting thread 2.
+Starting thread 3.
+Starting thread 4.
+Thread 3, start_row = 3751, end_row = 5000, start_col = 1, end_col = 10000
+Starting thread 5.
+Starting thread 6.
+Starting thread 7.
+Thread 7, start_row = 8751, end_row = 10000, start_col = 1, end_col = 10000
+Thread 1, start_row = 1251, end_row = 2500, start_col = 1, end_col = 10000
+Thread 2, start_row = 2501, end_row = 3750, start_col = 1, end_col = 10000
+Thread 5, start_row = 6251, end_row = 7500, start_col = 1, end_col = 10000
+Thread 4, start_row = 5001, end_row = 6250, start_col = 1, end_col = 10000
+Thread 6, start_row = 7501, end_row = 8750, start_col = 1, end_col = 10000
+
+Execution time: 3345.000000 seconds
+1524808486762763725
+
+4
+
+1524808486780003485
+Grid: 10000x10000, Iterations: 10000, Threads: 4, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 2500, start_col = 1, end_col = 10000
+Starting thread 2.
+Thread 1, start_row = 2501, end_row = 5000, start_col = 1, end_col = 10000
+Starting thread 3.
+Thread 2, start_row = 5001, end_row = 7500, start_col = 1, end_col = 10000
+Thread 3, start_row = 7501, end_row = 10000, start_col = 1, end_col = 10000
+
+Execution time: 6415.000000 seconds
+1524814901290897395
+
+2
+
+1524814901304672332
+Grid: 10000x10000, Iterations: 10000, Threads: 2, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 5000, start_col = 1, end_col = 10000
+Thread 1, start_row = 5001, end_row = 10000, start_col = 1, end_col = 10000
+
+Execution time: 12726.000000 seconds
+1524827627894114997

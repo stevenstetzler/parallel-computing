@@ -1,0 +1,215 @@
+hermes1
+32
+
+64
+
+1524827628212730491
+Grid: 10000x10000, Iterations: 10000, Threads: 64, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 1250, start_col = 1, end_col = 1250
+Starting thread 2.
+Starting thread 3.
+Thread 2, start_row = 2501, end_row = 3750, start_col = 1, end_col = 1250
+Starting thread 4.
+Starting thread 5.
+Starting thread 6.
+Starting thread 7.
+Starting thread 8.
+Starting thread 9.
+Starting thread 10.
+Starting thread 11.
+Starting thread 12.
+Thread 11, start_row = 3751, end_row = 5000, start_col = 1251, end_col = 2500
+Starting thread 13.
+Starting thread 14.
+Thread 1, start_row = 1251, end_row = 2500, start_col = 1, end_col = 1250
+Thread 10, start_row = 2501, end_row = 3750, start_col = 1251, end_col = 2500
+Starting thread 15.
+Starting thread 16.
+Thread 15, start_row = 8751, end_row = 10000, start_col = 1251, end_col = 2500
+Thread 9, start_row = 1251, end_row = 2500, start_col = 1251, end_col = 2500
+Thread 8, start_row = 1, end_row = 1250, start_col = 1251, end_col = 2500
+Starting thread 17.
+Thread 16, start_row = 1, end_row = 1250, start_col = 2501, end_col = 3750
+Thread 7, start_row = 8751, end_row = 10000, start_col = 1, end_col = 1250
+Starting thread 18.
+Thread 17, start_row = 1251, end_row = 2500, start_col = 2501, end_col = 3750
+Starting thread 19.
+Thread 6, start_row = 7501, end_row = 8750, start_col = 1, end_col = 1250
+Starting thread 20.
+Thread 19, start_row = 3751, end_row = 5000, start_col = 2501, end_col = 3750
+Starting thread 21.
+Thread 20, start_row = 5001, end_row = 6250, start_col = 2501, end_col = 3750
+Thread 12, start_row = 5001, end_row = 6250, start_col = 1251, end_col = 2500
+Thread 5, start_row = 6251, end_row = 7500, start_col = 1, end_col = 1250
+Thread 4, start_row = 5001, end_row = 6250, start_col = 1, end_col = 1250
+Thread 18, start_row = 2501, end_row = 3750, start_col = 2501, end_col = 3750
+Thread 3, start_row = 3751, end_row = 5000, start_col = 1, end_col = 1250
+Starting thread 22.
+Thread 14, start_row = 7501, end_row = 8750, start_col = 1251, end_col = 2500
+Thread 13, start_row = 6251, end_row = 7500, start_col = 1251, end_col = 2500
+Starting thread 23.
+Starting thread 24.
+Thread 23, start_row = 8751, end_row = 10000, start_col = 2501, end_col = 3750
+Starting thread 25.
+Thread 24, start_row = 1, end_row = 1250, start_col = 3751, end_col = 5000
+Thread 22, start_row = 7501, end_row = 8750, start_col = 2501, end_col = 3750
+Starting thread 26.
+Starting thread 27.
+Starting thread 28.
+Thread 27, start_row = 3751, end_row = 5000, start_col = 3751, end_col = 5000
+Starting thread 29.
+Starting thread 30.
+Starting thread 31.
+Starting thread 32.
+Starting thread 33.
+Thread 32, start_row = 1, end_row = 1250, start_col = 5001, end_col = 6250
+Thread 26, start_row = 2501, end_row = 3750, start_col = 3751, end_col = 5000
+Thread 31, start_row = 8751, end_row = 10000, start_col = 3751, end_col = 5000
+Thread 28, start_row = 5001, end_row = 6250, start_col = 3751, end_col = 5000
+Thread 25, start_row = 1251, end_row = 2500, start_col = 3751, end_col = 5000
+Thread 21, start_row = 6251, end_row = 7500, start_col = 2501, end_col = 3750
+Thread 30, start_row = 7501, end_row = 8750, start_col = 3751, end_col = 5000
+Thread 29, start_row = 6251, end_row = 7500, start_col = 3751, end_col = 5000
+Starting thread 34.
+Thread 33, start_row = 1251, end_row = 2500, start_col = 5001, end_col = 6250
+Starting thread 35.
+Starting thread 36.
+Starting thread 37.
+Starting thread 38.
+Starting thread 39.
+Starting thread 40.
+Starting thread 41.
+Starting thread 42.
+Starting thread 43.
+Thread 42, start_row = 2501, end_row = 3750, start_col = 6251, end_col = 7500
+Starting thread 44.
+Starting thread 45.
+Thread 44, start_row = 5001, end_row = 6250, start_col = 6251, end_col = 7500
+Starting thread 46.
+Starting thread 47.
+Starting thread 48.
+Starting thread 49.
+Starting thread 50.
+Thread 48, start_row = 1, end_row = 1250, start_col = 7501, end_col = 8750
+Starting thread 51.
+Thread 49, start_row = 1251, end_row = 2500, start_col = 7501, end_col = 8750
+Starting thread 52.
+Thread 41, start_row = 1251, end_row = 2500, start_col = 6251, end_col = 7500
+Thread 51, start_row = 3751, end_row = 5000, start_col = 7501, end_col = 8750
+Starting thread 53.
+Starting thread 54.
+Starting thread 55.
+Thread 54, start_row = 7501, end_row = 8750, start_col = 7501, end_col = 8750
+Starting thread 56.
+Starting thread 57.
+Thread 34, start_row = 2501, end_row = 3750, start_col = 5001, end_col = 6250
+Thread 45, start_row = 6251, end_row = 7500, start_col = 6251, end_col = 7500
+Thread 55, start_row = 8751, end_row = 10000, start_col = 7501, end_col = 8750
+Thread 40, start_row = 1, end_row = 1250, start_col = 6251, end_col = 7500
+Thread 43, start_row = 3751, end_row = 5000, start_col = 6251, end_col = 7500
+Starting thread 58.
+Thread 39, start_row = 8751, end_row = 10000, start_col = 5001, end_col = 6250
+Starting thread 59.
+Thread 50, start_row = 2501, end_row = 3750, start_col = 7501, end_col = 8750
+Thread 58, start_row = 2501, end_row = 3750, start_col = 8751, end_col = 10000
+Thread 53, start_row = 6251, end_row = 7500, start_col = 7501, end_col = 8750
+Thread 36, start_row = 5001, end_row = 6250, start_col = 5001, end_col = 6250
+Starting thread 60.
+Thread 46, start_row = 7501, end_row = 8750, start_col = 6251, end_col = 7500
+Thread 59, start_row = 3751, end_row = 5000, start_col = 8751, end_col = 10000
+Thread 47, start_row = 8751, end_row = 10000, start_col = 6251, end_col = 7500
+Thread 37, start_row = 6251, end_row = 7500, start_col = 5001, end_col = 6250
+Starting thread 61.
+Thread 60, start_row = 5001, end_row = 6250, start_col = 8751, end_col = 10000
+Starting thread 62.
+Thread 38, start_row = 7501, end_row = 8750, start_col = 5001, end_col = 6250
+Thread 62, start_row = 7501, end_row = 8750, start_col = 8751, end_col = 10000
+Starting thread 63.
+Thread 61, start_row = 6251, end_row = 7500, start_col = 8751, end_col = 10000
+Thread 52, start_row = 5001, end_row = 6250, start_col = 7501, end_col = 8750
+Thread 63, start_row = 8751, end_row = 10000, start_col = 8751, end_col = 10000
+Thread 56, start_row = 1, end_row = 1250, start_col = 8751, end_col = 10000
+Thread 57, start_row = 1251, end_row = 2500, start_col = 8751, end_col = 10000
+Thread 35, start_row = 3751, end_row = 5000, start_col = 5001, end_col = 6250
+
+Execution time: 841.000000 seconds
+1524828469418690689
+
+32
+
+1524828469422694282
+Grid: 10000x10000, Iterations: 10000, Threads: 32, Movie: 0 
+num_threads = 32 is not a power of four. Cannot block into squares.
+1524828470047263162
+
+16
+
+1524828470050928437
+Grid: 10000x10000, Iterations: 10000, Threads: 16, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 2500, start_col = 1, end_col = 2500
+Starting thread 2.
+Thread 1, start_row = 2501, end_row = 5000, start_col = 1, end_col = 2500
+Starting thread 3.
+Thread 2, start_row = 5001, end_row = 7500, start_col = 1, end_col = 2500
+Starting thread 4.
+Thread 3, start_row = 7501, end_row = 10000, start_col = 1, end_col = 2500
+Starting thread 5.
+Thread 4, start_row = 1, end_row = 2500, start_col = 2501, end_col = 5000
+Starting thread 6.
+Thread 5, start_row = 2501, end_row = 5000, start_col = 2501, end_col = 5000
+Starting thread 7.
+Thread 6, start_row = 5001, end_row = 7500, start_col = 2501, end_col = 5000
+Starting thread 8.
+Thread 7, start_row = 7501, end_row = 10000, start_col = 2501, end_col = 5000
+Starting thread 9.
+Thread 8, start_row = 1, end_row = 2500, start_col = 5001, end_col = 7500
+Starting thread 10.
+Thread 9, start_row = 2501, end_row = 5000, start_col = 5001, end_col = 7500
+Starting thread 11.
+Starting thread 12.
+Starting thread 13.
+Starting thread 14.
+Starting thread 15.
+Thread 10, start_row = 5001, end_row = 7500, start_col = 5001, end_col = 7500
+Thread 15, start_row = 7501, end_row = 10000, start_col = 7501, end_col = 10000
+Thread 11, start_row = 7501, end_row = 10000, start_col = 5001, end_col = 7500
+Thread 12, start_row = 1, end_row = 2500, start_col = 7501, end_col = 10000
+Thread 13, start_row = 2501, end_row = 5000, start_col = 7501, end_col = 10000
+Thread 14, start_row = 5001, end_row = 7500, start_col = 7501, end_col = 10000
+
+Execution time: 1704.000000 seconds
+1524830174192638842
+
+8
+
+1524830174205877064
+Grid: 10000x10000, Iterations: 10000, Threads: 8, Movie: 0 
+num_threads = 8 is not a power of four. Cannot block into squares.
+1524830174834511660
+
+4
+
+1524830174838058084
+Grid: 10000x10000, Iterations: 10000, Threads: 4, Movie: 0 
+Starting thread 0.
+Starting thread 1.
+Thread 0, start_row = 1, end_row = 5000, start_col = 1, end_col = 5000
+Starting thread 2.
+Thread 1, start_row = 5001, end_row = 10000, start_col = 1, end_col = 5000
+Starting thread 3.
+Thread 3, start_row = 5001, end_row = 10000, start_col = 5001, end_col = 10000
+Thread 2, start_row = 1, end_row = 5000, start_col = 5001, end_col = 10000
+
+Execution time: 6660.000000 seconds
+1524836834613791014
+
+2
+
+1524836834627108834
+Grid: 10000x10000, Iterations: 10000, Threads: 2, Movie: 0 
+num_threads = 2 is not a power of four. Cannot block into squares.
+1524836835257714305
