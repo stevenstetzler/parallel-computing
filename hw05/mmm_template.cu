@@ -23,6 +23,7 @@ float *A_GPU, *B_GPU, *C_GPU;
 
 void allocateAndInitializeAB();
 void computeCpuMMM();
+void computeGpuMMM();
 void copyMatricesToGPU();
 void copyResultFromGPU();
 void compareHostAndGpuOutput();
@@ -52,8 +53,18 @@ int main(int argc, char **argv) {
 	clock_t start = clock();	
 	computeCpuMMM();
 	clock_t end = clock();
-        double elapsed = (end - start) / (double) CLOCKS_PER_SEC;
-        printf("Computation time in the CPU: %f seconds\n", elapsed);
+    
+    double elapsed = (end - start) / (double) CLOCKS_PER_SEC;
+    printf("Computation time in the CPU: %f seconds\n", elapsed);
+
+    start = clock();
+    computeGpuMMM();
+    end = clock();
+
+    elapsed = (end - start) / (double) CLOCKS_PER_SEC;
+    printf("Computation time in the GPU: %f seconds\n", elapsed);
+
+    compareHostAndGpuOutput();
 
 	return 0;
 }
@@ -61,23 +72,31 @@ int main(int argc, char **argv) {
 // allocate and initialize A and B using a random number generator
 void allocateAndInitializeAB() {
 	
-	size_t sizeofA = A_MD.dimension1 * A_MD.dimension2 * sizeof(float);
-	A = (float*) malloc(sizeofA);
+    float val;
 	
+    size_t sizeofA = A_MD.dimension1 * A_MD.dimension2 * sizeof(float);
+	A = (float*) malloc(sizeofA);
+    A_GPU = (float*) malloc(sizeofA);
+
 	srand(time(NULL));
   	for (int i = 0; i < A_MD.dimension1; i++) {
 		for (int j = 0; j < A_MD.dimension2; j++) {
 			int index = i * A_MD.dimension2 + j;
-			A[index] = (rand() % 1000) * 0.001; 
+            val = (rand() % 1000) * 0.001;
+			A[index] = val; 
+            A_GPU[index] = val;
 		}
 	}
 	
 	size_t sizeofB = B_MD.dimension1 * B_MD.dimension2 * sizeof(float);
 	B = (float*) malloc(sizeofB);
+	B_GPU = (float*) malloc(sizeofB);
   	for (int i = 0; i < B_MD.dimension1; i++) {
 		for (int j = 0; j < B_MD.dimension2; j++) {
 			int index = i * B_MD.dimension2 + j;
-			B[index] = (rand() % 1000) * 0.001; 
+            val = (rand() % 1000) * 0.001;
+			B[index] = val; 
+            B_GPU[index] = val;
 		}
 	}
 }
@@ -129,13 +148,40 @@ void computeCpuMMM() {
 	}
 }
 
+// do a straightforward matrix-matrix multiplication in the CPU
+// notice that this implementation can be massively improved in the CPU by doing proper cache blocking but we are
+// not providing you the efficient CPU implementation as that reveals too much about the ideal GPU implementation
+void computeGpuMMM() {
+	
+	// allocate the result matrix for the CPU computation
+	size_t sizeofC = C_MD.dimension1 * C_MD.dimension2 * sizeof(float);
+	C_GPU = (float*) malloc(sizeofC);
+	
+	// compute C[i][j] as the sum of A[i][k] * B[k][j] for all columns k of A
+	for (int i = 0; i < A_MD.dimension1; i++) {
+		int a_i = i * A_MD.dimension2;
+		int c_i = i * C_MD.dimension2;
+		for (int j = 0; j < B_MD.dimension2; j++) {
+			int c_index = c_i + j;
+			C_GPU[c_index] = 0;
+			for (int k = 0; k < B_MD.dimension1; k++) {
+				int a_index = a_i + k;
+				int b_index = k * B_MD.dimension2 + j;
+				C_GPU[c_index] += A_GPU[a_index] * B_GPU[b_index];
+			}
+		}
+	}
+}
+
+
 // function to determine if the GPU computation is done correctly by comparing the output from the GPU with that
 // from the CPU
 void compareHostAndGpuOutput() {
 	int totalElements = C_MD.dimension1 * C_MD.dimension2;
 	int missmatchCount = 0;
 	for (int i = 0; i < totalElements; i++) {
-		if (fabs(C[i] - C_CPU[i]) > 0.01) {
+        printf("%d\n", i);
+        if (fabs(C[i] - C_GPU[i]) > 0.01) {
 			missmatchCount++;
 			printf("mismatch at index %i: %f\t%f\n", i, C[i], C_CPU[i]);
 		}
