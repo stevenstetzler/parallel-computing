@@ -1,3 +1,9 @@
+/*
+ * CS 4444
+ * Steven Stetzler
+ * Homework 5: Matrix-Matrix Multiplication with CUDA
+ */
+
 #include <stdio.h>
 #include <assert.h>
 #include <cuda.h>
