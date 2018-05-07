@@ -1,0 +1,50 @@
+hermes2
+64
+
+64
+
+1525646619996276727
+Grid: 10000x10000, Iterations: 10000, Threads: 64, Movie: 0 
+
+Execution time: 1477.000000 seconds
+1525648096369434669
+
+32
+
+1525648096373522274
+Grid: 10000x10000, Iterations: 10000, Threads: 32, Movie: 0 
+
+Execution time: 1256.000000 seconds
+1525649352827976514
+
+16
+
+1525649352836807627
+Grid: 10000x10000, Iterations: 10000, Threads: 16, Movie: 0 
+
+Execution time: 1240.000000 seconds
+1525650592176393339
+
+8
+
+1525650592180454538
+Grid: 10000x10000, Iterations: 10000, Threads: 8, Movie: 0 
+
+Execution time: 1174.000000 seconds
+1525651766429107864
+
+4
+
+1525651766433537629
+Grid: 10000x10000, Iterations: 10000, Threads: 4, Movie: 0 
+
+Execution time: 1142.000000 seconds
+1525652908439057519
+
+2
+
+1525652908445337209
+Grid: 10000x10000, Iterations: 10000, Threads: 2, Movie: 0 
+
+Execution time: 1519.000000 seconds
+1525654427466811147

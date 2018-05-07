@@ -1,0 +1,47 @@
+hermes1
+64
+
+64
+
+1525653958271420334
+Grid: 10000x10000, Iterations: 10000, Threads: 64, Movie: 0 
+
+Execution time: 732.000000 seconds
+1525654690780606422
+
+32
+
+1525654690784209057
+Grid: 10000x10000, Iterations: 10000, Threads: 32, Movie: 0 
+num_threads = 32 is not a power of four. Cannot block into squares.
+1525654690998625761
+
+16
+
+1525654691002502174
+Grid: 10000x10000, Iterations: 10000, Threads: 16, Movie: 0 
+
+Execution time: 714.000000 seconds
+1525655405887559197
+
+8
+
+1525655405891871694
+Grid: 10000x10000, Iterations: 10000, Threads: 8, Movie: 0 
+num_threads = 8 is not a power of four. Cannot block into squares.
+1525655406094629379
+
+4
+
+1525655406098110764
+Grid: 10000x10000, Iterations: 10000, Threads: 4, Movie: 0 
+
+Execution time: 970.000000 seconds
+1525656376345789677
+
+2
+
+1525656376361366657
+Grid: 10000x10000, Iterations: 10000, Threads: 2, Movie: 0 
+num_threads = 2 is not a power of four. Cannot block into squares.
+1525656376563088601
