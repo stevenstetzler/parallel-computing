@@ -1,8 +1,8 @@
 #!/bin/bash
 #/#/#//SBATCH --exclude=hermes[1-4],trillian[1-3],artemis[1-7],qdata[1-8],granger[1-8],nibbler[1-4],slurm[1-5],ai[01-06]
 #SBATCH --exclude=trillian[1-3],artemis[1-7],qdata[1-8],granger[1-8],nibbler[1-4],slurm[1-5],ai[01-06]
-#SBATCH --output=test_1_64_2.out
-#SBATCH --error=test_1_64_2.err
+#SBATCH --output=test_1_64_3.out
+#SBATCH --error=test_1_64_3.err
 #SBATCH --job-name="test_1_64"
 #SBATCH --cpus-per-task=64
 #SBATCH --nodes=1

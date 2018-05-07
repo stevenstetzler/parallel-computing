@@ -1,0 +1,30 @@
+hermes1
+64
+
+8
+
+1525672007952693534
+Grid: 10000x10000, Iterations: 10000, Threads: 8, Movie: 0 
+Thread 0, start_row = 1, end_row = 1250, start_col = 1, end_col = 10000
+Thread 1, start_row = 1251, end_row = 2500, start_col = 1, end_col = 10000
+Thread 7, start_row = 8751, end_row = 10000, start_col = 1, end_col = 10000
+Thread 2, start_row = 2501, end_row = 3750, start_col = 1, end_col = 10000
+Thread 6, start_row = 7501, end_row = 8750, start_col = 1, end_col = 10000
+Thread 5, start_row = 6251, end_row = 7500, start_col = 1, end_col = 10000
+Thread 4, start_row = 5001, end_row = 6250, start_col = 1, end_col = 10000
+Thread 3, start_row = 3751, end_row = 5000, start_col = 1, end_col = 10000
+
+Execution time: 866.000000 seconds
+1525672873980071471
+
+4
+
+1525672873982681176
+Grid: 10000x10000, Iterations: 10000, Threads: 4, Movie: 0 
+Thread 0, start_row = 1, end_row = 2500, start_col = 1, end_col = 10000
+Thread 1, start_row = 2501, end_row = 5000, start_col = 1, end_col = 10000
+Thread 2, start_row = 5001, end_row = 7500, start_col = 1, end_col = 10000
+Thread 3, start_row = 7501, end_row = 10000, start_col = 1, end_col = 10000
+
+Execution time: 926.000000 seconds
+1525673799481676545
