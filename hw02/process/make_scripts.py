@@ -1,3 +1,9 @@
+#
+# CS 4444
+# Steven Stetzler
+# Homework 2: High Throughput Computing
+#
+
 import subprocess
 import os
 import argparse
