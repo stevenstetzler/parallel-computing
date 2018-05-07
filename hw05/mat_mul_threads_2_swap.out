@@ -1,0 +1,260 @@
+N = 10000
+Grid: 10000 x 10000
+Threads: 1 x 1
+GPU_copy: 2.3200000000 seconds
+GPU: 107.4800000000 seconds
+N = 10000
+Grid: 79 x 10000
+Threads: 128 x 1
+GPU_copy: 2.2900000000 seconds
+GPU: 16.2100000000 seconds
+N = 10000
+Grid: 40 x 10000
+Threads: 256 x 1
+GPU_copy: 2.2900000000 seconds
+GPU: 16.0000000000 seconds
+N = 10000
+Grid: 27 x 10000
+Threads: 384 x 1
+GPU_copy: 2.1200000000 seconds
+GPU: 15.8400000000 seconds
+N = 10000
+Grid: 20 x 10000
+Threads: 512 x 1
+GPU_copy: 2.3600000000 seconds
+GPU: 15.6300000000 seconds
+N = 10000
+Grid: 16 x 10000
+Threads: 640 x 1
+GPU_copy: 2.3300000000 seconds
+GPU: 15.7100000000 seconds
+N = 10000
+Grid: 14 x 10000
+Threads: 768 x 1
+GPU_copy: 2.2500000000 seconds
+GPU: 14.2900000000 seconds
+N = 10000
+Grid: 12 x 10000
+Threads: 896 x 1
+GPU_copy: 2.2600000000 seconds
+GPU: 15.6500000000 seconds
+N = 10000
+Grid: 10 x 10000
+Threads: 1024 x 1
+GPU_copy: 2.3700000000 seconds
+GPU: 15.4900000000 seconds
+N = 10000
+Grid: 5000 x 5000
+Threads: 2 x 2
+GPU_copy: 2.3500000000 seconds
+GPU: 35.0600000000 seconds
+N = 10000
+Grid: 157 x 5000
+Threads: 64 x 2
+GPU_copy: 2.3500000000 seconds
+GPU: 15.9600000000 seconds
+N = 10000
+Grid: 79 x 5000
+Threads: 128 x 2
+GPU_copy: 2.3400000000 seconds
+GPU: 10.8500000000 seconds
+N = 10000
+Grid: 53 x 5000
+Threads: 192 x 2
+GPU_copy: 2.2800000000 seconds
+GPU: 14.0000000000 seconds
+N = 10000
+Grid: 40 x 5000
+Threads: 256 x 2
+GPU_copy: 2.3600000000 seconds
+GPU: 10.7800000000 seconds
+N = 10000
+Grid: 32 x 5000
+Threads: 320 x 2
+GPU_copy: 2.3200000000 seconds
+GPU: 14.0400000000 seconds
+N = 10000
+Grid: 27 x 5000
+Threads: 384 x 2
+GPU_copy: 2.3300000000 seconds
+GPU: 7.1100000000 seconds
+N = 10000
+Grid: 23 x 5000
+Threads: 448 x 2
+GPU_copy: 2.3700000000 seconds
+GPU: 12.9800000000 seconds
+N = 10000
+Grid: 20 x 5000
+Threads: 512 x 2
+GPU_copy: 2.2600000000 seconds
+GPU: 10.4600000000 seconds
+N = 10000
+Grid: 2500 x 2500
+Threads: 4 x 4
+GPU_copy: 2.1700000000 seconds
+GPU: 23.0700000000 seconds
+N = 10000
+Grid: 313 x 2500
+Threads: 32 x 4
+GPU_copy: 2.3700000000 seconds
+GPU: 11.6200000000 seconds
+N = 10000
+Grid: 157 x 2500
+Threads: 64 x 4
+GPU_copy: 2.2500000000 seconds
+GPU: 10.0100000000 seconds
+N = 10000
+Grid: 105 x 2500
+Threads: 96 x 4
+GPU_copy: 2.2700000000 seconds
+GPU: 5.1300000000 seconds
+N = 10000
+Grid: 79 x 2500
+Threads: 128 x 4
+GPU_copy: 2.2000000000 seconds
+GPU: 5.2300000000 seconds
+N = 10000
+Grid: 63 x 2500
+Threads: 160 x 4
+GPU_copy: 2.2600000000 seconds
+GPU: 5.0700000000 seconds
+N = 10000
+Grid: 53 x 2500
+Threads: 192 x 4
+GPU_copy: 2.2700000000 seconds
+GPU: 4.8400000000 seconds
+N = 10000
+Grid: 45 x 2500
+Threads: 224 x 4
+GPU_copy: 2.1800000000 seconds
+GPU: 5.2200000000 seconds
+N = 10000
+Grid: 40 x 2500
+Threads: 256 x 4
+GPU_copy: 2.3600000000 seconds
+GPU: 5.2700000000 seconds
+N = 10000
+Grid: 1250 x 1250
+Threads: 8 x 8
+GPU_copy: 2.3400000000 seconds
+GPU: 10.2800000000 seconds
+N = 10000
+Grid: 625 x 1250
+Threads: 16 x 8
+GPU_copy: 2.1800000000 seconds
+GPU: 4.6900000000 seconds
+N = 10000
+Grid: 313 x 1250
+Threads: 32 x 8
+GPU_copy: 2.1800000000 seconds
+GPU: 4.4400000000 seconds
+N = 10000
+Grid: 209 x 1250
+Threads: 48 x 8
+GPU_copy: 2.2900000000 seconds
+GPU: 4.7600000000 seconds
+N = 10000
+Grid: 157 x 1250
+Threads: 64 x 8
+GPU_copy: 2.3100000000 seconds
+GPU: 4.5200000000 seconds
+N = 10000
+Grid: 125 x 1250
+Threads: 80 x 8
+GPU_copy: 2.2500000000 seconds
+GPU: 4.7100000000 seconds
+N = 10000
+Grid: 105 x 1250
+Threads: 96 x 8
+GPU_copy: 2.0200000000 seconds
+GPU: 4.6500000000 seconds
+N = 10000
+Grid: 90 x 1250
+Threads: 112 x 8
+GPU_copy: 2.3500000000 seconds
+GPU: 4.7200000000 seconds
+N = 10000
+Grid: 79 x 1250
+Threads: 128 x 8
+GPU_copy: 2.2900000000 seconds
+GPU: 4.5000000000 seconds
+N = 10000
+Grid: 1250 x 625
+Threads: 8 x 16
+GPU_copy: 2.2500000000 seconds
+GPU: 5.8900000000 seconds
+N = 10000
+Grid: 625 x 625
+Threads: 16 x 16
+GPU_copy: 2.2300000000 seconds
+GPU: 3.7800000000 seconds
+N = 10000
+Grid: 417 x 625
+Threads: 24 x 16
+GPU_copy: 2.3000000000 seconds
+GPU: 4.5000000000 seconds
+N = 10000
+Grid: 313 x 625
+Threads: 32 x 16
+GPU_copy: 2.3300000000 seconds
+GPU: 4.4600000000 seconds
+N = 10000
+Grid: 250 x 625
+Threads: 40 x 16
+GPU_copy: 2.3700000000 seconds
+GPU: 4.9600000000 seconds
+N = 10000
+Grid: 209 x 625
+Threads: 48 x 16
+GPU_copy: 2.3500000000 seconds
+GPU: 4.7900000000 seconds
+N = 10000
+Grid: 179 x 625
+Threads: 56 x 16
+GPU_copy: 2.3100000000 seconds
+GPU: 4.8500000000 seconds
+N = 10000
+Grid: 157 x 625
+Threads: 64 x 16
+GPU_copy: 2.2300000000 seconds
+GPU: 4.5000000000 seconds
+N = 10000
+Grid: 2500 x 313
+Threads: 4 x 32
+GPU_copy: 2.2000000000 seconds
+GPU: 12.2300000000 seconds
+N = 10000
+Grid: 1250 x 313
+Threads: 8 x 32
+GPU_copy: 2.2200000000 seconds
+GPU: 4.7700000000 seconds
+N = 10000
+Grid: 834 x 313
+Threads: 12 x 32
+GPU_copy: 2.2600000000 seconds
+GPU: 4.7600000000 seconds
+N = 10000
+Grid: 625 x 313
+Threads: 16 x 32
+GPU_copy: 2.2000000000 seconds
+GPU: 3.7100000000 seconds
+N = 10000
+Grid: 500 x 313
+Threads: 20 x 32
+GPU_copy: 2.3400000000 seconds
+GPU: 4.7800000000 seconds
+N = 10000
+Grid: 417 x 313
+Threads: 24 x 32
+GPU_copy: 2.2500000000 seconds
+GPU: 4.5800000000 seconds
+N = 10000
+Grid: 358 x 313
+Threads: 28 x 32
+GPU_copy: 2.2200000000 seconds
+GPU: 5.2600000000 seconds
+N = 10000
+Grid: 313 x 313
+Threads: 32 x 32
+GPU_copy: 2.3400000000 seconds
+GPU: 4.4700000000 seconds
