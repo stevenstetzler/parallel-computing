@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include <pthread.h>
+#include <mpi.h>
 #include <math.h>
 
 // Define the immutable boundary conditions and the inital cell value
